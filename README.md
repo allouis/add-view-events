@@ -6,7 +6,7 @@ Adds delegated event listeners to an element, optionally binding the callbacks t
 npm install add-view-events
 ```
 
-# Usage
+## Usage
 
 ```javascript
 var addEvents = require('./add-view-events')
@@ -26,13 +26,13 @@ SomeView.prototype.remove = function() {
   this.removeEvents()
   this.el.remove()
 }
-``` 
+```
 
-# API 
+## API
 
-## `addEvents(el, events[, context])`
+#### `addEvents(el, events[, context])`
 
-Attach event listeners and returns a cleanup function. `el` should be an element, `events` should be an object with `'event elem.selector'` keys and function properties. 
+Attach event listeners and returns a cleanup function. `el` should be an element, `events` should be an object with `'event elem.selector'` keys and function properties.
 
 The `context` argument is optional and will ensure callbacks are called with their context bound to `context`
 
