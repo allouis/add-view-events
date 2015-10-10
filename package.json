@@ -1,6 +1,6 @@
 {
   "name": "add-view-events",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple helper for adding events to an element, backbone object style",
   "main": "index.js",
   "scripts": {
