@@ -4,7 +4,8 @@
   "description": "Simple helper for adding events to an element, backbone object style",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js | tap-spec"
+    "test": "tape test/*.js | tap-spec",
+    "browserify-build": "browserify --entry index.js --outfile add-view-events.js --standalone add-view-events"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "deligate": "^1.0.1"
   },
   "devDependencies": {
+    "browserify": "^11.2.0",
     "tap-spec": "^4.1.0",
     "tape": "^4.2.1"
   }
