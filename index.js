@@ -32,7 +32,7 @@ function addEvents(el, events, context) {
 
     return function removeEvents(){
         eventDescriptions.forEach(function(desc){
-            var capture = non_bubble_phase_events.indexOf(eventName) != -1
+            var capture = non_bubble_phase_events.indexOf(desc.eventName) != -1
             el.removeEventListener(desc.eventName, desc.handler, capture)
         })
     }
